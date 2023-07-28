@@ -5,7 +5,7 @@
 from collections import defaultdict
 
 def groupAnagrams (strs): 
-    res = defaultdict(list)
+    res = defaultdict(list) #defining a dict with the value as list
     
     for s in strs:
         count = [0] * 26 # [0,0,0,0,..........0,0,0]
@@ -13,7 +13,7 @@ def groupAnagrams (strs):
         for c in s: 
             count[(ord(c) - ord("a"))] += 1
 
-        res[tuple(count)].append(s)
+        res[tuple(count)].append(s) #List can't be a key of a dict
 
     return(res.values())
             
