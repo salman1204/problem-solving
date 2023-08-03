@@ -12,7 +12,7 @@ def topKFrequent (nums,k):
             dict[num] +=1
         else:
             dict[num] = 1
-    
+            
     top_two = heapq.nlargest(k, dict, key=dict.get)
     return top_two
 
