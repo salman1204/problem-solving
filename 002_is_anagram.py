@@ -2,7 +2,9 @@
 
 ''' https://leetcode.com/problems/valid-anagram/ '''
 
-def isAnagram(s,t):
-    return sorted(s)==sorted(t)
 
-print(isAnagram("cat","acttt"))
+def is_anagram(s, t):
+    return sorted(s) == sorted(t)
+
+
+print(is_anagram("cat", "act"))
